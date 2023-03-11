@@ -9,15 +9,17 @@
 npm run dev
 ```
 
+http://localhost:1234
+
+
+##### Запуск dist
+```
+npm start
+```
+
 http://localhost:3000
 
-
-##### Запуск build
-```
-npm run build
-```
-
-[Deploy](https://deploy--dashing-chimera-391a49.netlify.app/)
+[Deploy](https://grand-paprenjak-fab48d.netlify.app/)
 
 
 Компиляция и рендер на клиенте

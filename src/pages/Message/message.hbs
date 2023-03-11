@@ -1,0 +1,27 @@
+{{#extend "ProfileLayout"}}
+  {{#content body}}
+    <div class="page_home">
+      <div class="page_home-bar">
+        <section class="page_home-bar_top">
+          {{{buttonProfile}}}
+          <div class="page_home-bar_search">
+            {{{InputSearch}}}
+          </div>
+        </section>
+        <div class="line_x"></div>
+        <section class="page_home-contacts">
+          {{{ListContacts}}}
+        </section>
+      </div>
+      <div class="page_home-chat">
+        {{{HeadBar}}}
+        {{{ReadMessage}}}
+        <div class="write-message">
+          {{{AttachMessage}}}
+          {{{InputMessage}}}
+          {{{EnterMessage}}}
+        </div>
+      </div>
+    </div>
+  {{/content}}
+{{/extend}}

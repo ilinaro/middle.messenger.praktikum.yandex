@@ -1,0 +1,25 @@
+{{#extend "PrimaryLayout"}}
+  {{#content body}}
+    <div class="form_login">
+      <div class="f-header">
+        Вход
+      </div>
+      <form onsubmit="event.preventDefault()">
+        <div class="input_login">
+          {{{Login}}}
+        </div>
+        <div class="input_pass">
+          {{{Password}}}
+        </div>
+        <div class="buttons">
+          {{{ButtonLogin}}}
+          {{{ButtonNextRegistration}}}
+        </div>
+      </form>
+    </div>
+    <div class="test_pages">
+      {{{NotFound}}}
+      {{{ErrorServer}}}
+    </div>
+  {{/content}}
+{{/extend}}

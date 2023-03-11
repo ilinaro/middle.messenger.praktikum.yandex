@@ -1,0 +1,4 @@
+@mixin gradients($deg) {
+  background: rgb(2, 0, 36);
+  background: linear-gradient($deg, #020024 0%, #ff0088 0%, #9c00ff 100%);
+}

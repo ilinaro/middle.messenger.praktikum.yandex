@@ -1,0 +1,27 @@
+<div class="head_bar">
+  <div class="head_bar-user">
+    <div class="head_bar-avatar">
+      <img src="{{avatar}}" alt="{{display_name}}" />
+    </div>
+    <div class="head_bar-username f-bold">
+      {{display_name}}
+    </div>
+  </div>
+  {{!-- menu --}}
+  <div class="menu_wrapper">
+    {{{ButtonMenu}}}
+    {{#if stateOpen}}
+      <div class="menu_box f-normal">
+        {{{ButtonAdd}}}
+        {{{ButtonRemove}}}
+      </div>
+    {{/if}}
+  </div>
+  {{!-- modals --}}
+  {{#if stateModalAddUser}}
+    {{{ModalUserAdd}}}
+  {{/if}}
+  {{#if stateModalRemoveUser}}
+    {{{ModalUserRemove}}}
+  {{/if}}
+</div>

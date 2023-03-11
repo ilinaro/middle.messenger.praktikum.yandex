@@ -1,0 +1,7 @@
+<div class="{{#if error}}error-input{{/if}}">
+  {{{Input}}}
+  <label class="text-field__label">{{label}}</label>
+  {{#if error}}
+    <div class="error-message in_edit">{{error}}</div>
+  {{/if}}
+</div>

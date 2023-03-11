@@ -1,0 +1,31 @@
+.button {
+    outline: none;
+    border: none;
+    width: 280px;
+    height: 37px;
+    border-radius: 8px;
+    &_blue {
+        background-color: var(--color-blue);
+        color: var(--color-white);
+    }
+    &_default {
+        cursor: pointer;
+        width: fit-content;
+        font-size: 12px;
+        color: var(--color-darken);
+        height: 30px;
+        display: flex;
+        align-items: center;
+        background-color: #00000000;
+        transition: 0.2s color;
+        & > svg > path {
+            transition: 0.2s stroke;
+        }
+        &:hover {
+            color: var(--color-blue);
+            & > svg > path {
+                stroke: var(--color-blue);
+            }
+        }
+    }
+}

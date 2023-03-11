@@ -1,0 +1,22 @@
+{{#extend "PrimaryLayout"}}
+  {{#content body}}
+    <div class="form_registration">
+      <div class="f-header">
+        Регистрация
+      </div>
+      <form class="form_registration_inputs" onsubmit="event.preventDefault()">
+        {{{InputEmail}}}
+        {{{InputLogin}}}
+        {{{InputFirstName}}}
+        {{{InputSecondName}}}
+        {{{InputPhone}}}
+        {{{NewPassword}}}
+        {{{NewPasswordTwo}}}
+        <div class="form_registration_buttons">
+          {{{ButtonRegistration}}}
+          {{{ButtonNextLogin}}}
+        </div>
+      </form>
+    </div>
+  {{/content}}
+{{/extend}}

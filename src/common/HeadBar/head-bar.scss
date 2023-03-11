@@ -1,0 +1,46 @@
+.head_bar {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-user {
+        cursor: default;
+        width: fit-content;
+        align-items: center;
+        display: flex;
+    }
+    &-avatar {
+        cursor: default;
+        min-width: 34px;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        background-color: var(--color-avatar);
+        border-radius: 50px;
+        overflow: hidden;
+        object-fit: contain;
+        & img {
+            max-width: 50px;
+        }
+    }
+}
+
+.menu {
+    &_wrapper {
+        position: relative;
+    }
+    &_box {
+        z-index: 1;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        width: 210px;
+        height: 90px;
+        background: var(--color-white);
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+        border-radius: 12px;
+    }
+}

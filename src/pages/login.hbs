@@ -1,0 +1,10 @@
+{{#extend "PrimaryLayout"}}
+  {{#content body}}
+    {{> LoginForm }}
+    <div class="test_pages">
+    {{> Button label="404" onClick="goToPage('404')" className="btn-white"}}
+    {{> Button label="500" onClick="goToPage('500')" className="btn-white"}}
+    {{> Button label="modals" onClick="goToPage('modals')" className="btn-white"}}
+    </div>
+  {{/content}}
+{{/extend}}

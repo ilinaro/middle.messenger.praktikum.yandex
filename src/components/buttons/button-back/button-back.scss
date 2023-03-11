@@ -1,0 +1,23 @@
+.button_back {
+    position: absolute;
+    left: 0;
+    outline: none;
+    border: none;
+    width: 64px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-default);
+    &-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        max-width: 28px;
+        background-color: var(--color-blue);
+    }
+}

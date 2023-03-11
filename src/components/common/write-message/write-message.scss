@@ -1,0 +1,30 @@
+.write-message {
+    height: 54px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    & > :not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.post_message {
+    cursor: pointer;
+    min-width: 28px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attach_message {
+    cursor: pointer;
+    &:hover {
+        path {
+            fill: var(--color-blue);
+        }
+    }
+}

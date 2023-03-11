@@ -1,0 +1,60 @@
+.contact {
+    cursor: pointer;
+    margin: 2px 0;
+    transition:  0.2s background-color;
+    &:hover {
+        background-color: var(--color-blue-light);
+    }
+    &_wrapper {
+        height: 70px;
+        width: 100%;
+        padding: 12px 10px;
+        display: flex;
+    }
+    &_avatar {
+        overflow: hidden;
+        width: 47px;
+        height: 47px;
+        min-width: 47px;
+        border-radius: 50px;
+        background-color: var(--color-avatar);
+    }
+    &_user {
+        overflow: hidden;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &-name {
+            color: var(--color-black);
+        }
+        &-msg {
+            margin-top: 4px;
+            color: var(--color-darken);
+        }
+    }
+    &_info {
+        overflow: hidden;
+        width: 35px;
+        min-height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &-date {
+            color: var(--color-darken);
+        }
+        &-msg {
+            min-width: 20px;
+            width: 20px;
+            min-height: 20px;
+            height: 20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            margin-top: 12px;
+            color: var(--color-white);
+            background-color: var(--color-blue);
+        }
+    }
+}

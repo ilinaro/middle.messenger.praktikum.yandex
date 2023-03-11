@@ -1,0 +1,14 @@
+.red {
+    background-color: var(--color-red);
+}
+
+.test_pages {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    & > :nth-child(1n) {
+        margin-bottom: 20px;
+    }
+}

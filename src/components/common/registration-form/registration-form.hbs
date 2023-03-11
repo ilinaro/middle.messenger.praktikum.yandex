@@ -1,0 +1,65 @@
+<div class="form_registration" >
+  <div class="f-header">Регистрация</div>
+  <form class="form_registration_inputs" onsubmit="event.preventDefault()">
+    {{> Input 
+      type="email" 
+      label="Почта" 
+      id="email" 
+      name="email"
+      type="text"
+    }}
+    {{> Input 
+      type="login" 
+      label="Логин" 
+      id="login" 
+      name="login"
+      type="text"
+    }}
+    {{> Input 
+      type="firstName" 
+      label="Имя" 
+      id="firstName" 
+      name="firstName"
+      type="text"
+    }}
+    {{> Input 
+      type="secondName" 
+      label="Фамилия" 
+      id="secondName" 
+      name="secondName"
+      type="text"
+    }}
+    {{> Input 
+      type="phone" 
+      label="Телефон" 
+      id="phone" 
+      name="phone"
+      type="text"
+    }}
+    {{> Input 
+      type="password" 
+      label="Пароль" 
+      id="newPassword" 
+      name="newPassword"
+      type="text"
+    }}
+    {{> Input 
+      type="password" 
+      label="Пароль (еще раз)" 
+      id="newPassword" 
+      name="newPasswordTwo"
+    }}
+  <div class="form_registration_buttons">
+  {{> Button 
+    label="Зарегистрироваться" 
+    onClick="goToPage('home')"
+    type="onsubmit"
+  }}
+  {{> Button 
+    label="Войти" 
+    onClick="goToPage('login')" 
+    className="btn-white"
+  }}
+  </div>
+  </form>  
+</div>

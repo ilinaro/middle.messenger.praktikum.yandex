@@ -1,0 +1,36 @@
+<div class="form_login" >
+  <div class="f-header">Вход</div>
+  <form onsubmit="event.preventDefault()">
+    <div class="input_login">
+      {{> Input 
+        type="text" 
+        label="Логин" 
+        id="login" 
+        name="login" 
+        maxLength="35"
+      }}
+    </div>
+    <div class="input_pass">
+      {{> Input 
+        type="password" 
+        label="Пароль" 
+        id="password" 
+        name="password"  
+        maxLength="35"
+      }}
+    </div>
+    <div class="buttons">
+      {{> Button 
+        label="Авторизоваться" 
+        onClick="goToPage('home')" 
+        type="submit" 
+        form="data"
+      }}
+      {{> Button 
+        label="Нет аккаунта?" 
+        onClick="goToPage('registration')" 
+        className="btn-white"
+      }}
+    </div>
+  </form>
+</div>

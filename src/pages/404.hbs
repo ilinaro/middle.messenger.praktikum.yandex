@@ -1,0 +1,19 @@
+{{#extend "ProfileLayout"}}
+  {{#content body}}
+  <div class="page_error">
+    <span class="f-big">
+      404
+    </span>
+    <span class="f-header error_message">
+      Не туда попали
+    </span>
+    <div class="error_next">
+      {{> Button 
+        label="Назад к чатам" 
+        onClick="goToPage('login')" 
+        className="btn-white"
+      }}
+    </div>
+  </div>
+  {{/content}}
+{{/extend}}

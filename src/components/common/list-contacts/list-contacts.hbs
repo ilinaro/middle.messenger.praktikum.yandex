@@ -1,0 +1,15 @@
+<div class="ListContacts">
+  {{#each contacts.people as |person|}}
+    {{#> childEntry}}
+      {{> Contact 
+          avatar=@person.avatar 
+          display_name=@person.display_name
+          from=@person.from 
+          message=@person.message 
+          date=@person.date
+          count=@person.count
+      }}
+      <div class="line_x"></div>
+    {{/childEntry}}
+  {{/each}}
+</div>

@@ -1,0 +1,24 @@
+{{#extend "ProfileLayout"}}
+  {{#content body}}
+    <div class="page_home">
+      <div class="page_home-bar">
+        <section class="page_home-bar_top">
+          <div onclick="goToPage('profile')"  class="button_default">Профиль {{> MoreSVG}}</div>
+          <div class="page_home-bar_search">
+            {{> InputSearch}}
+          </div>
+        </section>
+        <div class="line_x"></div>
+        <section class="page_home-contacts">
+          {{> ListContacts}}
+        </section>
+      </div>
+      <div class="page_home-chat">
+        {{> HeadBar avatar="avatar" display_name="Ананас"}}
+        {{> ReadMessage}}
+        {{> WriteMessage}}
+      </div>
+    </div>
+  {{/content}}
+{{/extend}}
+

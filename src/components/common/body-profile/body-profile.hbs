@@ -1,0 +1,44 @@
+<div class="body_profile">
+    <div class="body_profile-photo">
+        <div class="photo_update" data-title="Поменять аватар"></div>
+        <div>{{> PhotoSVG}}</div>
+    </div>
+    <div class="f-title-bold body_profile-username">{{user.display_name}}</div>
+    <div class="form__profile f-normal">
+        <div class="form__profile_row">
+            <div>Почта</div>
+            <div>{{user.email}}</div> 
+        </div>
+        <div class="form__profile_row">
+            <div>Логин</div>
+            <div>{{user.login}}</div>
+        </div>
+        <div class="form__profile_row">
+            <div>Имя</div>
+            <div>{{user.first_name}}</div>
+        </div>
+        <div class="form__profile_row">
+            <div>Фамилия</div>
+            <div>{{user.second_name}}</div>
+        </div>
+        <div class="form__profile_row">
+            <div>Имя в чате</div>
+            <div>{{user.display_name}}</div>
+        </div>
+        <div class="form__profile_row">
+            <div>Телефон</div>
+            <div>{{user.phone}}</div>
+        </div>
+    </div>
+    <div class="body_profile-edit f-normal">
+        <div class="btn-edit" onclick="goToPage('edit-profile')">
+            Изменить данные
+        </div>
+        <div class="btn-edit" onclick="goToPage('edit-password')">
+            Изменить пароль
+        </div>
+        <div class="btn-exit" onclick="goToPage('login')">
+            Выйти
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{{#extend "ProfileLayout"}}
+  {{#content body}}
+  <div class="modal">
+    {{> ModalFileError}}
+    {{> ModalFileOnload}}
+    {{> ModalFileUpload}}
+    {{> ModalUserAdd}}
+    {{> ModalUserDelete}}
+    {{> Button label="Назад" onClick="goToPage('login')" className="btn-white"}}
+  </div>
+  {{/content}}
+{{/extend}}

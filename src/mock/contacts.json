@@ -1,0 +1,85 @@
+{
+    "people": [
+      {
+        "avatar": "links",
+        "display_name": "Киноклуб",
+        "from": "Вы",
+        "message": "стикер",
+        "date": "12:00",
+        "count": "2"
+      },
+      {
+        "avatar": "links",
+        "display_name": "Илья",
+        "from": "Вы",
+        "message": "Друзья, у меня для вас особенный выпуск новостей!...",
+        "date": "15:12",
+        "count": "4"
+      },
+      {
+        "avatar": "links",
+        "display_name": "Вадим",
+        "from": "Вы",
+        "message": "Круто!",
+        "date": "Пт",
+        "count": "2"
+      },
+      {
+        "avatar": "links",
+        "display_name": "тет-а-теты",
+        "from": "Вы",
+        "message": "И Human Interface Guidelines и Material Design рекомендуют...",
+        "date": "Ср",
+        "count": "2"
+      },
+      {
+        "avatar": "links",
+        "display_name": "1, 2, 3",
+        "from": "Вы",
+        "message": "Миллионы россиян ежедневно проводят десятки часов свое...",
+        "date": "Пн",
+        "count": "2"
+      },
+      {
+        "avatar": "links",
+        "display_name": "Design Destroyer",
+        "from": "Вы",
+        "message": "В 2008 году художник Jon Rafman  начал собирать...",
+        "date": "Пн",
+        "count": "2"
+      },
+      {
+        "avatar": "links",
+        "display_name": "Day.",
+        "from": "Вы",
+        "message": "Так увлёкся работой по курсу, что совсем забыл его анонсир...",
+        "date": "01.02",
+        "count": "2"
+      },
+      {
+        "avatar": "links",
+        "display_name": "Стас Рогозин",
+        "from": "Вы",
+        "message": "Можно или сегодня или завтра вечером.",
+        "date": "01.02",
+        "count": "2"
+      },
+      {
+        "avatar": "links",
+        "display_name": "Стас Рогозин",
+        "from": "Вы",
+        "message": "Можно или сегодня или завтра вечером.",
+        "date": "01.02",
+        "count": "2"
+      },
+      {
+        "avatar": "links",
+        "display_name": "Стас Рогозин",
+        "from": "Вы",
+        "message": "Можно или сегодня или завтра вечером.",
+        "date": "01.02",
+        "count": "2"
+      }
+    ]
+  }
+  

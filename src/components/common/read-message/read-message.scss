@@ -1,0 +1,15 @@
+.read-message {
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100vh - 109px) ;
+    border-top: var(--color-line) solid 1px;
+    border-bottom: var(--color-line) solid 1px;
+    position: relative;
+}
+
+.messages-day {
+    padding: 20px 0;
+    color: var(--color-darken);
+    display: flex;
+    justify-content: center;
+}

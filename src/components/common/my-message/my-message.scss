@@ -1,0 +1,24 @@
+.my_message {
+    cursor: default;
+    display: flex;
+    background-color: var(--color-blue-light);
+    border-radius: 10px 10px 0 10px;
+    padding: 10px;
+    min-height: 37px;
+    max-width: 402px;
+    &-time {
+        margin-left: 10px;
+        display: flex;
+        align-items: flex-end;
+        color: var(--color-blue);
+        & > :nth-child(1) {
+            margin-right: 2px;
+            margin-bottom: 3px;
+        }
+    }
+    &-position {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

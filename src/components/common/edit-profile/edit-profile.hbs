@@ -1,0 +1,81 @@
+<div class="edit_profile">
+    <div class="edit_profile-photo">
+        {{> PhotoSVG}}
+    </div>
+    <div class="f-title-bold edit_profile-username">{{user.display_name}}</div>
+    <form class="form__edit f-normal">
+        <div class="form__edit_row">
+            <div>Почта</div>
+            {{> InputProfile 
+                id="text"
+                idInput="email" 
+                typeInput="email"
+                inputName="email"
+                placeholderInput="Почта"
+                value=user.email
+                maxLength="35"
+            }}
+        </div>
+        <div class="form__edit_row">
+            <div>Логин</div>
+            {{> InputProfile 
+                id="text"
+                idInput="login" 
+                typeInput="text"
+                inputName="login"
+                placeholderInput="Логин"
+                value=user.login
+                maxLength="35"
+            }}
+        </div>
+        <div class="form__edit_row">
+            <div>Имя</div>
+            {{> InputProfile 
+                id="text"
+                idInput="firstName" 
+                typeInput="text"
+                inputName="firstName"
+                placeholderInput="Имя"
+                value=user.first_name
+                maxLength="35"
+            }}
+        </div>
+        <div class="form__edit_row">
+            <div>Фамилия</div>
+            {{> InputProfile 
+                id="text"
+                idInput="secondName" 
+                typeInput="text"
+                inputName="secondName"
+                placeholderInput="Фамилия"
+                value=user.second_name
+                maxLength="35"
+            }}
+        </div>
+        <div class="form__edit_row">
+            <div>Имя в чате</div>
+            {{> InputProfile 
+                id="text"
+                idInput="displayName" 
+                typeInput="text"
+                inputName="displayName"
+                placeholderInput="Имя в чате"
+                value=user.display_name
+                maxLength="35"
+            }}
+        </div>
+        <div class="form__edit_row">
+            <div>Телефон</div>
+            {{> InputProfile
+                id="phone"
+                idInput="phone" 
+                typeInput="tel"
+                inputName="phone"
+                placeholderInput="+7(123)123-34-56"
+                value=user.phone
+                maxLength="17"
+            }}
+        </div>
+    </form>
+    {{> Button label="Сохранить" onClick="goToPage('profile')"}}
+</div>

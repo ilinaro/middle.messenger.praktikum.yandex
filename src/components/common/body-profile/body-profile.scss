@@ -1,0 +1,108 @@
+.photo_update {
+    position: absolute;
+    cursor: pointer;
+    color: var(--color-white);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    border-radius: 9999px;
+    background-color: rgba(0, 0, 0, 0.582);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    padding: 40px;
+    &:after {
+        content: attr(data-title);
+    }
+}
+
+.body_profile {
+    cursor: default;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 510px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-photo {
+        overflow: hidden;
+        margin-top: 60px;
+        position: relative;
+        width: 130px;
+        height: 130px;
+        min-width: 130px;
+        max-width: 130px;
+        min-height: 130px;
+        max-height: 130px;
+        border-radius: 9999px;
+        background-color: var(--color-avatar);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            .photo_update {
+                opacity: 1;
+            }
+        }
+    }
+    &-username {
+        padding-top: 20px;
+        height: 90px;
+    }
+    &-edit {
+        margin-top: 60px;
+        min-height: 80px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & > :not(:last-child) {
+            border-bottom: 1px var(--color-line) solid;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.form__profile {
+    width: 100%;
+    & > :not(:last-child) {
+        border-bottom: 1px var(--color-line) solid;
+    }
+    &_row {
+        & :nth-child(2) {
+            color: var(--color-darken);
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 34px;
+    }
+}
+
+.btn-edit {
+    cursor: pointer;
+    padding: 7px 0;
+    margin: 3px 0;
+    color: var(--color-blue);
+}
+
+.btn-exit {
+    cursor: pointer;
+    padding: 7px 0;
+    color: var(--color-red);
+}

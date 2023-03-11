@@ -9,5 +9,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`My static server is running on port ${PORT}!`);
+  console.log(`Sprint 1 ${PORT}!`);
 });

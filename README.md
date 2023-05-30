@@ -19,7 +19,7 @@ npm start
 
 http://localhost:3000
 
-[Deploy](https://grand-paprenjak-fab48d.netlify.app/)
+[Deploy](https://spectacular-monstera-566ed5.netlify.app/)
 
 
 Компиляция и рендер на клиенте

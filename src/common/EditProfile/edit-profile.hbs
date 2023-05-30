@@ -1,0 +1,59 @@
+<div class="edit_profile">
+  <div class="body_profile-photo">
+    {{{ImageEdit}}}
+  </div>
+  <div class="edit_profile-date">
+    {{#if isLoading}}
+      <div class="isLoading">
+        Loading...
+      </div>
+    {{else}}
+      <div>
+        <div class="f-title-bold edit_profile-username">
+          {{#if display_name}}
+            {{display_name}}
+          {{else}}
+            {{login}}
+          {{/if}}
+        </div>
+        <form class="edit_profile_form" onsubmit="event.preventDefault()">
+          <div class="form__edit f-normal">
+            <div class="form__edit_row">
+              <div>
+                Почта
+              </div>{{{InputEmail}}}
+            </div>
+            <div class="form__edit_row">
+              <div>
+                Логин
+              </div>{{{InputLogin}}}
+            </div>
+            <div class="form__edit_row">
+              <div>
+                Имя
+              </div>{{{InputFirstName}}}
+            </div>
+            <div class="form__edit_row">
+              <div>
+                Фамилия
+              </div>{{{InputLastName}}}
+            </div>
+            <div class="form__edit_row">
+              <div>
+                Имя в чате
+              </div>{{{InputDisplayName}}}
+            </div>
+            <div class="form__edit_row">
+              <div>
+                Телефон
+              </div>{{{InputPhone}}}
+            </div>
+          </div>
+          <div class="edit_profile-submit">
+            {{{ButtonProfile}}}
+          </div>
+        </form>
+      </div>
+    {{/if}}
+  </div>
+</div>

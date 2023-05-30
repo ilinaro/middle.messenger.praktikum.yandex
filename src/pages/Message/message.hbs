@@ -1,0 +1,21 @@
+{{#extend "ProfileLayout"}}
+  {{#content body}}
+    <div class="page_home">
+      <div class="page_home-bar">
+        <section class="page_home-bar_top">
+          <div>
+            {{{CreatChat}}}
+          </div>
+          <div class="page_home-bar_search">
+            {{{InputSearch}}}
+          </div>
+        </section>
+        <div class="line_x"></div>
+        <section class="page_home-contacts">
+            {{{ListSearch}}}
+        </section>
+      </div>
+      {{{Room}}}
+    </div>
+  {{/content}}
+{{/extend}}

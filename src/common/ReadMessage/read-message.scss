@@ -1,0 +1,58 @@
+.read-message {
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100vh - 109px);
+    border-top: var(--color-line) solid 1px;
+    border-bottom: var(--color-line) solid 1px;
+    position: relative;
+}
+
+.messages-day {
+    padding: 20px 0;
+    color: var(--color-darken);
+    display: flex;
+    justify-content: center;
+}
+
+
+.my_message {
+    margin: 5px 0;
+    cursor: default;
+    display: flex;
+    background-color: var(--color-blue-light);
+    border-radius: 10px 10px 0 10px;
+    padding: 10px;
+    min-height: 37px;
+    max-width: 402px;
+    &-time {
+        margin-left: 10px;
+        display: flex;
+        align-items: flex-end;
+        color: var(--color-blue);
+        & > :nth-child(1) {
+            margin-right: 2px;
+            margin-bottom: 3px;
+        }
+    }
+    &-position {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.contact_msg {
+    background-color: var(--color-noactive);
+    border-radius: 0 10px 10px 10px;
+    padding: 10px;
+    max-width: 402px;
+    margin: 5px 0;
+    position: relative;
+    cursor: default;
+    &-time {
+        position: absolute;
+        bottom: 3px;
+        right: 6px;
+    }
+}
+

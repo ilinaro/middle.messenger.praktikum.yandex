@@ -1,0 +1,12 @@
+<div>
+  {{#if isLoading}}
+    ...
+  {{else}}
+    <div class="ListContacts__item">
+      {{#each chats}}
+        {{{this}}}
+        <div class="line_x"></div>
+      {{/each}}
+    </div>
+  {{/if}}
+</div>

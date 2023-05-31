@@ -1,0 +1,20 @@
+.button-add {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white);
+    border: none;
+    justify-content: flex-start;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin: 3px 0;
+    & > :nth-child(1) {
+        margin-right: 10px;
+        border-radius: 9999px;
+        border: 1px solid var(--color-blue);
+        height: 20px;
+        width: 20px;
+        padding: 4px;
+    }
+}

@@ -1,0 +1,87 @@
+.error-input input {
+    color: var(--color-red);
+}
+
+.error-message {
+    position: absolute;
+    color: var(--color-red);
+    margin-top: 4px;
+    font-size: 10px;
+}
+
+.text-field__label {
+    display: block;
+    margin-bottom: 0;
+}
+
+.text-field__input {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-black);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:focus {
+        cursor: text;
+    }
+}
+
+.text-field__input::placeholder {
+    color: var(--color-darken);
+}
+
+.text-field_floating-3 {
+    position: relative;
+}
+
+.text-field_floating-3 .text-field__input {
+    border: none;
+    border-bottom: 1px solid var(--color-blue);
+    height: 38px;
+    background-color: var(--color-white);
+}
+
+.text-field_floating-3 .text-field__input:focus {
+    outline: 0;
+    border-bottom: 1px solid var(--color-blue);
+    box-shadow: none;
+    background-color: var(--color-white);
+}
+
+.text-field_floating-3 .text-field__label {
+    color: var(--color-darken);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    padding-top: 15px;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: color 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+.text-field_floating-3 .text-field__input::-moz-placeholder {
+    color: transparent;
+}
+
+.text-field_floating-3 .text-field__input::placeholder {
+    color: transparent;
+}
+
+.text-field_floating-3 .text-field__input:focus,
+.text-field_floating-3 .text-field__input:not(:placeholder-shown) {
+    border-bottom: 1px solid var(--color-blue);
+    padding-top: 10px;
+}
+
+.text-field_floating-3 .text-field__input:focus ~ .text-field__label,
+.text-field_floating-3 .text-field__input:not(:placeholder-shown) ~ .text-field__label {
+    transform: scale(0.75) translateY(-1.2rem) translateX(0);
+    color: var(--color-darken);
+}

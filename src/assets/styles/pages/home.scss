@@ -1,0 +1,37 @@
+.page_home {
+    display: flex;
+    &-bar {
+        background-color: var(--color-default);
+        width: 310px;
+        min-width: 310px;
+        max-width: 310px;
+        height: 100vh;
+        &_top {
+            padding: 10px 10px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &_search {
+            width: 100%;
+        }
+    }
+    &-contacts {
+        height: calc(100vh - 93px);
+        overflow-y: scroll;
+    }
+    &-chat {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-white);
+        margin: 0 20px;
+    }
+    &-nochat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: var(--color-darken);
+        font-size: 12px;
+    }
+}

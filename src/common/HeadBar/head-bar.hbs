@@ -20,6 +20,7 @@
       {{#if stateOpen}}
         <div class="menu_box f-normal">
           {{{ButtonRemove}}}
+          {{{ButtonRemoveUser}}}
         </div>
       {{/if}}
     </div>
@@ -37,16 +38,16 @@
         {{/if}}
       </div>
       <div class="head_bar-username f-bold">
-        {{display_name}}
+        {{display_name}} 
       </div>
     </div>
     <div class="menu_wrapper">
       {{{ButtonMenu}}}
-      {{#if stateOpen}}
+      {{!-- {{#if stateOpen}} --}}
         <div class="menu_box f-normal">
           {{{ButtonAdd}}}
         </div>
-      {{/if}}
+      {{!-- {{/if}} --}}
     </div>
   {{/if}}
 </div>

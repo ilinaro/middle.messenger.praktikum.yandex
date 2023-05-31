@@ -84,7 +84,7 @@ class Chat extends Block<CharProps> {
   }
 
   readMessage(props: any) {
-    console.log(props)
+    // console.log(props)
     return (
       !!props.messages.length &&
       props.messages.map((data: UserMessages) => {
@@ -120,6 +120,7 @@ class Chat extends Block<CharProps> {
         stateOpen: false,
         avatar: self?.avatar,
         display_name: self?.title,
+        userId: self?.id,
         selectUserId,
       }))
     }

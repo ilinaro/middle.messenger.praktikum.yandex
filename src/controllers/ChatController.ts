@@ -33,7 +33,7 @@ export class ChatController {
 
   async createChat(title: string) {
     try {
-     return await this.api.createChat({ title })
+      return await this.api.createChat({ title })
     } catch (e) {
       store.set('chats.error', e)
     }
@@ -46,7 +46,7 @@ export class ChatController {
   async addUser(login: string, userId: number) {
     try {
       const chatId = await this.createChat(login)
-      if(chatId) {
+      if (chatId) {
         await this.api.addUser(userId, chatId.id)
         this.getChats()
       }
@@ -59,6 +59,13 @@ export class ChatController {
     try {
       await this.api.deleteChat(chatId)
       this.getChats()
+    } catch (e) {
+      store.set('chats.error', e)
+    }
+  }
+  async deleteUserFromChat(userId: number, chatId: number) {
+    try {
+      await this.api.deleteUserFromChat(userId, chatId)
     } catch (e) {
       store.set('chats.error', e)
     }

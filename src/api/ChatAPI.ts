@@ -39,6 +39,13 @@ export class ChatAPI extends BaseAPI {
     return this.http.delete('/', { chatId })
   }
 
+  deleteUserFromChat(userId: number, chatId: number) {
+    return this.http.delete('/users', {
+      users: [userId],
+      chatId,
+    })
+  }
+
   async getToken(id: number): Promise<string> {
     const response = await this.http.post<{ token: string }>(`/token/${id}`)
     return response.token

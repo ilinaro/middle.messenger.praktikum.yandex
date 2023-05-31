@@ -30,6 +30,7 @@ class MessagesController {
     }
 
     const { user } = store.getState()
+    if (!id || !user?.data?.id) return
     const transport = new WSTransport(
       `wss://ya-praktikum.tech/ws/chats/${user?.data?.id}/${id}/${token}`,
     )
@@ -69,8 +70,7 @@ class MessagesController {
   }
 
   private onMessage(id: number, messages: Message | Message[]) {
-
-    if(!Array.isArray(messages) && messages.type !== 'message') {
+    if (!Array.isArray(messages) && messages.type !== 'message') {
       return
     }
 

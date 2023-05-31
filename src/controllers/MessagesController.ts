@@ -19,12 +19,13 @@ export interface Message {
     upload_date: string
   }
 }
-
+// случайно смержил правки
 class MessagesController {
   // передает id sockets & заничение транспорта
   private sockets: Map<number, WSTransport> = new Map()
 
   async connect(id: number, token: string) {
+    if (!id) return
     if (this.sockets.get(id)) {
       return
     }

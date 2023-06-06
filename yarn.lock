@@ -1597,7 +1597,7 @@
   "resolved" "https://registry.npmjs.org/css-functions-list/-/css-functions-list-3.1.0.tgz"
   "version" "3.1.0"
 
-"css-loader@6.7.3":
+"css-loader@^6.7.3":
   "integrity" "sha512-qhOH1KlBMnZP8FzRO6YCH9UHXQhVMcEGLyNdb7Hv2cpcmJbW0YrddO+tG1ab5nT41KpHIYGsbeHqxB9xPu1pKQ=="
   "resolved" "https://registry.npmjs.org/css-loader/-/css-loader-6.7.3.tgz"
   "version" "6.7.3"
@@ -5255,7 +5255,7 @@
   "resolved" "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   "version" "3.1.1"
 
-"style-loader@3.3.2":
+"style-loader@^3.3.2":
   "integrity" "sha512-RHs/vcrKdQK8wZliteNK4NKzxvLBzpuHMqYmUVWeKa6MkaIQ97ZTOS0b+zapZhy6GcrgWnvWYCMHRirC3FsUmw=="
   "resolved" "https://registry.npmjs.org/style-loader/-/style-loader-3.3.2.tgz"
   "version" "3.3.2"

@@ -5,7 +5,6 @@ import ChatController from '../../controllers/ChatController'
 import ImageDefaultSVG from '../../assets/icons/ImageDefaultSVG.svg'
 import ProfileController from '../../controllers/ProfileController'
 import template from './head-bar.hbs'
-import { withStore } from '../../utils/Store'
 
 interface HeadBarProps {
   userId?:number;

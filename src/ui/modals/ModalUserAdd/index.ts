@@ -1,7 +1,6 @@
 import { Button, InputLabel, ModalWindowBack } from '../..'
 
 import Block from '../../../utils/Block'
-import ChatController from '../../../controllers/ChatController'
 import template from './modal-user-add.hbs'
 import { СontrolLogin } from '../../../lib'
 

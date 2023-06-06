@@ -7,11 +7,9 @@ import {
 } from '../../lib'
 
 import Block from '../../utils/Block'
-// import ImageInput from '../ImageEdit'
 import ImageEdit from '../ImageEdit'
 import ProfileController from '../../controllers/ProfileController'
 import { ProfileData } from '../../api/ProfileAPI'
-import Router from '../../utils/Router'
 import { User } from '../../api/AuthAPI'
 import template from './edit-profile.hbs'
 

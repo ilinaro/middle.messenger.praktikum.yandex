@@ -64,7 +64,7 @@ class Chat extends Block<CharProps> {
     }
   }
 
-  componentDidUpdate(oldProps: any, newProps: any): boolean {
+  componentDidUpdate(_oldProps: any, newProps: any): boolean {
     if (
       !!newProps?.selectUserId &&
       !!this.props?.userId

@@ -15,7 +15,7 @@ class ListContacts extends Block<ListContactsProps> {
     super({ ...props })
   }
 
-  componentDidUpdate(oldProps: any, newProps: any): boolean {
+  componentDidUpdate(_oldProps: any, newProps: any): boolean {
     if (!!newProps.chats) {
       this.children.chats = this.myChats(newProps)
       return true

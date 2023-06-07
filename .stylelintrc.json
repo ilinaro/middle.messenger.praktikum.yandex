@@ -14,9 +14,10 @@
     "**/*.hbs",
     "**/*.json",
     "**/*.md",
+    "**/*.png",
     "src/index.html",
     "build/*",
     "dist/*",
     "Dockerfile"
   ]
-}
+} 

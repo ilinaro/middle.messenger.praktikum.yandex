@@ -7,7 +7,7 @@ import ProfileController from '../../controllers/ProfileController'
 import template from './head-bar.hbs'
 
 interface HeadBarProps {
-  userId?:number;
+  userId?: number
   self?: boolean
   noself?: boolean
   selectUserId?: number
@@ -21,13 +21,6 @@ interface HeadBarProps {
   stateModalRemoveUser?: boolean
   defaultAvatar?: SVGElement
 }
-// "npm-run-all": "4.1.5",
-// "path-browserify": "1.0.1",
-
-// "proxyquire": "2.1.3",
-
-// "sinon": "15.0.3",
-// 
 export default class HeadBar extends Block<HeadBarProps> {
   constructor(props: HeadBarProps) {
     super({
@@ -78,7 +71,10 @@ export default class HeadBar extends Block<HeadBarProps> {
         click: () => {
           this.openMenu()
           if (this.props?.selectUserId && this.props?.userId) {
-            ChatController.deleteUserFromChat(this.props.userId, this.props.selectUserId)
+            ChatController.deleteUserFromChat(
+              this.props.userId,
+              this.props.selectUserId,
+            )
             ProfileController.resetSearch()
             ProfileController.resetSelect()
           }

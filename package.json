@@ -16,6 +16,14 @@
   "keywords": [],
   "author": "Oleg Ilin",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "devDependencies": {
     "@babel/preset-typescript": "7.18.6",
     "@types/chai": "4.3.4",
@@ -30,7 +38,7 @@
     "handlebars": "4.7.7",
     "handlebars-template-loader": "^0.1.0",
     "html-webpack-plugin": "5.5.0",
-    "husky": "8.0.3",
+    "husky": "^8.0.3",
     "jsdom": "21.1.1",
     "lint-staged": "13.2.0",
     "mocha": "10.2.0",

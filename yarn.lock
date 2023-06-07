@@ -2928,7 +2928,7 @@
   "resolved" "https://registry.npmjs.org/human-signals/-/human-signals-4.3.1.tgz"
   "version" "4.3.1"
 
-"husky@8.0.3":
+"husky@^8.0.3":
   "integrity" "sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg=="
   "resolved" "https://registry.npmjs.org/husky/-/husky-8.0.3.tgz"
   "version" "8.0.3"
@@ -4704,7 +4704,7 @@
   "resolved" "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   "version" "2.1.2"
 
-"sass-loader@^13.3.1":
+"sass-loader@13.3.1":
   "integrity" "sha512-cBTxmgyVA1nXPvIK4brjJMXOMJ2v2YrQEuHqLw3LylGb3gsR6jAvdjHMcy/+JGTmmIF9SauTrLLR7bsWDMWqgg=="
   "resolved" "https://registry.npmjs.org/sass-loader/-/sass-loader-13.3.1.tgz"
   "version" "13.3.1"
@@ -5316,7 +5316,7 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
-"svg-loader@^0.0.2":
+"svg-loader@0.0.2":
   "integrity" "sha512-otmaUALijTGJJpvPVTHhHIzseEsrB7DyJJxygb0XkiZPeJT9t+PiK7tDT9YWSUDqHqqqutTqF0ldXth/+T72wg=="
   "resolved" "https://registry.npmjs.org/svg-loader/-/svg-loader-0.0.2.tgz"
   "version" "0.0.2"

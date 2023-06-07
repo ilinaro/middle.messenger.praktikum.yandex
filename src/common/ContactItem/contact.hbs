@@ -1,43 +1,43 @@
 <div class="contact">
-  <div class="contact_wrapper">
-    <div class="contact_avatar">
-      {{#if avatar}}
-        <img
-          src="https://ya-praktikum.tech/api/v2/resources{{avatar}}"
-          alt="фото пользователя"
-        />
-      {{else}}
-        <img src="{{defaultAvatar}}" alt="фото пользователя" />
-      {{/if}}
-    </div>
-    <div class="contact_user">
-      <div class="contact_user-name f-bold">
-        {{#if title}}
-          {{title}}
-        {{else}}
-          {{first_name}}
-        {{/if}}
-      </div>
-      <div class="contact_user-msg f-light">
-        <span class="f-bold">
-          {{from}}
-        </span>
-        {{#if last_message}}
-          {{last_message.content}}
-        {{/if}}
-      </div>
-    </div>
-    <div class="contact_info">
-      {{#if date}}
-        <div class="contact_info-date f-mini">
-          {{date}}
+    <div class="contact_wrapper">
+        <div class="contact_avatar">
+            {{#if avatar}}
+                <img
+                    src="https://ya-praktikum.tech/api/v2/resources{{avatar}}"
+                    alt="фото пользователя"
+                />
+            {{else}}
+                <img src="{{defaultAvatar}}" alt="фото пользователя" />
+            {{/if}}
         </div>
-      {{/if}}
-      {{#if unread_count}}
-        <div class="contact_info-msg f-light">
-          {{unread_count}}
+        <div class="contact_user">
+            <div class="contact_user-name f-bold">
+                {{#if title}}
+                    {{title}}
+                {{else}}
+                    {{first_name}}
+                {{/if}}
+            </div>
+            <div class="contact_user-msg f-light">
+                <span class="f-bold">
+                    {{from}}
+                </span>
+                {{#if last_message}}
+                    {{last_message.content}}
+                {{/if}}
+            </div>
         </div>
-      {{/if}}
+        <div class="contact_info">
+            {{#if date}}
+                <div class="contact_info-date f-mini">
+                    {{date}}
+                </div>
+            {{/if}}
+            {{#if unread_count}}
+                <div class="contact_info-msg f-light">
+                    {{unread_count}}
+                </div>
+            {{/if}}
+        </div>
     </div>
-  </div>
 </div>

@@ -1,15 +1,14 @@
 <div>
-  {{{HeadBar}}}
-  {{#if search}}
-  {{else}}
-  <div class="read-message">
-    {{#each Messages}}
-      {{{this}}}
-    {{/each}}
-  </div>
-    <div class="write-message">
-      {{{InputMessage}}}
-      {{{EnterMessage}}}
-    </div>
-  {{/if}}
+    {{{HeadBar}}}
+    {{#if search}}{{else}}
+        <div class="read-message">
+            {{#each Messages}}
+                {{{this}}}
+            {{/each}}
+        </div>
+        <div class="write-message">
+            {{{InputMessage}}}
+            {{{EnterMessage}}}
+        </div>
+    {{/if}}
 </div>

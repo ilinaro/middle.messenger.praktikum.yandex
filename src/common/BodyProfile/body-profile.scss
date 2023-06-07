@@ -1,5 +1,3 @@
-
-
 .body_profile {
     height: 100vh;
     cursor: default;
@@ -37,7 +35,7 @@
     & > :not(:last-child) {
         border-bottom: 1px var(--color-line) solid;
     }
-        
+
     &_row {
         & :nth-child(2) {
             color: var(--color-darken);

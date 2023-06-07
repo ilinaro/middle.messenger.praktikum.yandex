@@ -1,53 +1,53 @@
 <div class="head_bar">
-  {{#if self}}
-    <div class="head_bar-user">
-        <div class="head_bar-avatar">
-          {{#if avatar}}
-            <img
-              src="https://ya-praktikum.tech/api/v2/resources{{avatar}}"
-              alt="фото пользователя"
-            />
-          {{else}}
-            <img src="{{defaultAvatar}}" alt="фото пользователя" />
-          {{/if}}
+    {{#if self}}
+        <div class="head_bar-user">
+            <div class="head_bar-avatar">
+                {{#if avatar}}
+                    <img
+                        src="https://ya-praktikum.tech/api/v2/resources{{avatar}}"
+                        alt="фото пользователя"
+                    />
+                {{else}}
+                    <img src="{{defaultAvatar}}" alt="фото пользователя" />
+                {{/if}}
+            </div>
+            <div class="head_bar-username f-bold">
+                {{display_name}}
+            </div>
         </div>
-        <div class="head_bar-username f-bold">
-          {{display_name}}
+        <div class="menu_wrapper">
+            {{{ButtonMenu}}}
+            {{#if stateOpen}}
+                <div class="menu_box f-normal">
+                    {{{ButtonRemove}}}
+                    {{{ButtonRemoveUser}}}
+                </div>
+            {{/if}}
         </div>
-    </div>
-    <div class="menu_wrapper">
-      {{{ButtonMenu}}}
-      {{#if stateOpen}}
-        <div class="menu_box f-normal">
-          {{{ButtonRemove}}}
-          {{{ButtonRemoveUser}}}
+    {{/if}}
+    {{#if noself}}
+        <div class="head_bar-user">
+            <div class="head_bar-avatar">
+                {{#if avatar}}
+                    <img
+                        src="https://ya-praktikum.tech/api/v2/resources{{avatar}}"
+                        alt="фото пользователя"
+                    />
+                {{else}}
+                    <img src="{{defaultAvatar}}" alt="фото пользователя" />
+                {{/if}}
+            </div>
+            <div class="head_bar-username f-bold">
+                {{display_name}}
+            </div>
         </div>
-      {{/if}}
-    </div>
-  {{/if}}
-  {{#if noself}}
-    <div class="head_bar-user">
-      <div class="head_bar-avatar">
-        {{#if avatar}}
-          <img
-            src="https://ya-praktikum.tech/api/v2/resources{{avatar}}"
-            alt="фото пользователя"
-          />
-        {{else}}
-          <img src="{{defaultAvatar}}" alt="фото пользователя" />
-        {{/if}}
-      </div>
-      <div class="head_bar-username f-bold">
-        {{display_name}} 
-      </div>
-    </div>
-    <div class="menu_wrapper">
-      {{{ButtonMenu}}}
-      {{!-- {{#if stateOpen}} --}}
-        <div class="menu_box f-normal">
-          {{{ButtonAdd}}}
+        <div class="menu_wrapper">
+            {{{ButtonMenu}}}
+            {{!-- {{#if stateOpen}} --}}
+            <div class="menu_box f-normal">
+                {{{ButtonAdd}}}
+            </div>
+            {{!-- {{/if}} --}}
         </div>
-      {{!-- {{/if}} --}}
-    </div>
-  {{/if}}
+    {{/if}}
 </div>

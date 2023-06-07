@@ -1,14 +1,14 @@
 <html lang="ru">
-  <main class="profileLayout">
-    <div class="page_profile">
-      {{{LinkBack}}}
-      {{#if isLoading}}
-        <div class="isLoading">
-          Loading...
+    <main class="profileLayout">
+        <div class="page_profile">
+            {{{LinkBack}}}
+            {{#if isLoading}}
+                <div class="isLoading">
+                    Loading...
+                </div>
+            {{else}}
+                {{{BodyProfile}}}
+            {{/if}}
         </div>
-      {{else}}
-        {{{BodyProfile}}}
-      {{/if}}
-    </div>
-  </main>
+    </main>
 </html>

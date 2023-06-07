@@ -1,27 +1,27 @@
 <html lang="ru">
-  <main class="PrimaryLayout">
-    <div class="PrimaryLayout__content">
-      <div class="form_registration">
-        <div class="f-header">
-          Регистрация
+    <main class="PrimaryLayout">
+        <div class="PrimaryLayout__content">
+            <div class="form_registration">
+                <div class="f-header">
+                    Регистрация
+                </div>
+                <form
+                    class="form_registration_inputs"
+                    onsubmit="event.preventDefault()"
+                >
+                    {{{InputEmail}}}
+                    {{{InputLogin}}}
+                    {{{InputFirstName}}}
+                    {{{InputSecondName}}}
+                    {{{InputPhone}}}
+                    {{{NewPassword}}}
+                    {{{NewPasswordTwo}}}
+                    <div class="form_registration_buttons">
+                        {{{ButtonRegistration}}}
+                        {{{LinkLogin}}}
+                    </div>
+                </form>
+            </div>
         </div>
-        <form
-          class="form_registration_inputs"
-          onsubmit="event.preventDefault()"
-        >
-          {{{InputEmail}}}
-          {{{InputLogin}}}
-          {{{InputFirstName}}}
-          {{{InputSecondName}}}
-          {{{InputPhone}}}
-          {{{NewPassword}}}
-          {{{NewPasswordTwo}}}
-          <div class="form_registration_buttons">
-            {{{ButtonRegistration}}}
-            {{{LinkLogin}}}
-          </div>
-        </form>
-      </div>
-    </div>
-  </main>
+    </main>
 </html>

@@ -1,2 +1,1 @@
-
-declare module 'express-history-api-fallback';
+declare module "express-history-api-fallback";

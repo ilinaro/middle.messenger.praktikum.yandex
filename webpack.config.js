@@ -24,29 +24,32 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.hbs/,
-        use: [
-          {
-            loader: 'handlebars-template-loader',
-            options: {
-              runtime: path.resolve(__dirname, 'src/Helpers'),
-            },
-          },
-        ],
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.scss$/,
-        use: [
-          'style-loader', // Injects styles into the DOM
-          'css-loader', // Translates CSS into CommonJS modules
-          'sass-loader', // Compiles Sass to CSS
-        ],
+        test: /\.(eot|woff2?|ttf)$/i,
+        type: 'asset',
+        generator: {
+          filename: 'fonts/[name][ext]',
+        },
+      },
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]',
+        },
+      },
+      {
+        test: /\.hbs/,
+        use: ['handlebars-template-loader'],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/index.html'),
+      template: path.resolve(__dirname, 'src/index.html'),
     }),
   ],
   devServer: {

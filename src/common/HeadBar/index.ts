@@ -21,7 +21,13 @@ interface HeadBarProps {
   stateModalRemoveUser?: boolean
   defaultAvatar?: SVGElement
 }
+// "npm-run-all": "4.1.5",
+// "path-browserify": "1.0.1",
 
+// "proxyquire": "2.1.3",
+
+// "sinon": "15.0.3",
+// 
 export default class HeadBar extends Block<HeadBarProps> {
   constructor(props: HeadBarProps) {
     super({

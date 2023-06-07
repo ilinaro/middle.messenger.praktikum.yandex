@@ -10,13 +10,16 @@ module.exports = {
     clean: true,
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json', '.hbs', '.scss', '.html', '.svg'],
+    extensions: ['.ts', '.js', '.json', '.hbs', '.scss', '.html', '.svg', '.ico'],
   },
   module: {
     rules: [
       {
         test: /\.svg$/,
-        use: 'svg-loader',
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/icons/[name][ext]',
+        },
       },
       {
         test: /\.ts?$/,
@@ -28,17 +31,14 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(eot|woff2?|ttf)$/i,
+        test: /\.(eot|woff2?|ttf)$/,
         type: 'asset',
-        generator: {
-          filename: 'fonts/[name][ext]',
-        },
       },
       {
-        test: /\.(jpe?g|png|gif)$/i,
+        test: /\.(jpe?g|png|gif|ico)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name][ext]',
+          filename: 'assets/images/[name][ext]',
         },
       },
       {

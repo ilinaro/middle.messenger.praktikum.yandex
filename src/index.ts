@@ -1,4 +1,3 @@
-import '../src/layouts'
 import '../src/common'
 import './ui'
 import './assets/styles/global.scss'

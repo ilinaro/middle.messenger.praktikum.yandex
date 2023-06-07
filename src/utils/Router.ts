@@ -117,4 +117,4 @@ export class Router {
   }
 }
 
-export default new Router('#app');
+export default new Router('#root');

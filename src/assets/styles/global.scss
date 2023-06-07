@@ -8,7 +8,6 @@
 @import "./pages/modals.scss";
 @import "./pages/registration.scss";
 @import "./pages/message.scss";
-@import "../../layouts/index.scss";
 @import "../../common/index.scss";
 @import "../../ui/index.scss";
 
@@ -16,6 +15,37 @@
   border: red solid;
   width: 100%;
 }
+
+.PrimaryLayout {
+  position: relative;
+  &__content {
+      height: 100vh;
+      margin: 0 auto;
+      background: url("../../assets/images/pineapple.jpg") no-repeat center;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      -khtml-background-size: cover;
+      background-size: cover;
+      object-fit: cover;
+      position: relative;
+      max-width: 1700px;
+      & > :nth-child(1) {
+          position: absolute;
+          right: 50px;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+      }
+  }
+}
+
+.profileLayout {
+  height: 100vh;
+  position: relative;
+}
+
 
 .isLoading {
   display: flex;

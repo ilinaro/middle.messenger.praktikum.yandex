@@ -19,5 +19,5 @@ require.extensions['.hbs'] = function (module, filename) {
 };
 
 require.extensions['.scss'] = function () {
-  module.exports = () => ({});
+  module.exports = {}
 };

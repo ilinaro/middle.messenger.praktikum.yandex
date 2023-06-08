@@ -1,20 +1,21 @@
-import HTTPTransport from "../utils/HTTPTransport";
+import HTTPTransport from '../utils/HTTPTransport';
 
 export default abstract class BaseAPI {
-    protected http: HTTPTransport;
+  protected http: HTTPTransport;
 
-    protected constructor(endpoint: string) {
-        this.http = new HTTPTransport(endpoint);
-    }
+  protected constructor(endpoint: string) {
+    this.http = new HTTPTransport(endpoint);
+  }
 
-    public abstract create?(data: unknown): Promise<unknown>;
+  public abstract create?(data: unknown): Promise<unknown>;
 
-    public abstract read?(identifier?: string): Promise<unknown>;
+  public abstract read?(identifier?: string): Promise<unknown>;
 
-    public abstract update?(data: unknown): Promise<unknown>;
+  public abstract update?(data: unknown): Promise<unknown>;
 
-    public abstract delete?(identifier: unknown): Promise<unknown>;
+  public abstract delete?(identifier: unknown): Promise<unknown>;
 }
+
 
 // import HTTPTransport from '../utils/HTTPTransport';
 
@@ -40,7 +41,7 @@ export default abstract class BaseAPI {
 //     this.http = new HTTPTransport(endpoint);
 //   }
 
-//   // методы могут быть переопределены в дочернем классе
+//   // методы могут быть переопределены в дочернем классе   
 //   public abstract create?(data: unknown): Promise<unknown>;
 
 //   public abstract read?(identifier?: string | number): Promise<unknown>;

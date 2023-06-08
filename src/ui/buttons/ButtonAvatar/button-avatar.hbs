@@ -1,11 +1,8 @@
 <button class="image-button">
-    <div class="photo_update" data-title="Поменять аватар"></div>
+  <div class="photo_update" data-title="Поменять аватар"></div>
     {{#if avatar}}
-        <img
-            src="https://ya-praktikum.tech/api/v2/resources{{avatar}}"
-            alt="фото пользователя"
-        />
+      <img src="https://ya-praktikum.tech/api/v2/resources{{avatar}}" alt="фото пользователя" />
     {{else}}
-        <img src="{{defaultAvatar}}" alt="фото пользователя" />
+      <img src="{{defaultAvatar}}" alt="фото пользователя" />
     {{/if}}
 </button>

@@ -1,71 +1,71 @@
 <div class="body_profile">
-    <div class="body_profile-photo">
-        {{{ImageEdit}}}
+  <div class="body_profile-photo">
+    {{{ImageEdit}}}
+  </div>
+  <div class="f-title-bold body_profile-username">
+    {{#if display_name}}
+      {{display_name}}
+    {{else}}
+      {{login}}
+    {{/if}}
+  </div>
+  <div class="form__profile f-normal">
+    <div class="form__profile_row">
+      <div>
+        Почта
+      </div>
+      <div>
+        {{email}}
+      </div>
     </div>
-    <div class="f-title-bold body_profile-username">
+    <div class="form__profile_row">
+      <div>
+        Логин
+      </div>
+      <div>
+        {{login}}
+      </div>
+    </div>
+    <div class="form__profile_row">
+      <div>
+        Имя
+      </div>
+      <div>
+        {{first_name}}
+      </div>
+    </div>
+    <div class="form__profile_row">
+      <div>
+        Фамилия
+      </div>
+      <div>
+        {{second_name}}
+      </div>
+    </div>
+    <div class="form__profile_row">
+      <div>
+        Имя в чате
+      </div>
+      <div>
         {{#if display_name}}
-            {{display_name}}
+          {{display_name}}
         {{else}}
-            {{login}}
+          {{first_name}}
         {{/if}}
+      </div>
     </div>
-    <div class="form__profile f-normal">
-        <div class="form__profile_row">
-            <div>
-                Почта
-            </div>
-            <div>
-                {{email}}
-            </div>
-        </div>
-        <div class="form__profile_row">
-            <div>
-                Логин
-            </div>
-            <div>
-                {{login}}
-            </div>
-        </div>
-        <div class="form__profile_row">
-            <div>
-                Имя
-            </div>
-            <div>
-                {{first_name}}
-            </div>
-        </div>
-        <div class="form__profile_row">
-            <div>
-                Фамилия
-            </div>
-            <div>
-                {{second_name}}
-            </div>
-        </div>
-        <div class="form__profile_row">
-            <div>
-                Имя в чате
-            </div>
-            <div>
-                {{#if display_name}}
-                    {{display_name}}
-                {{else}}
-                    {{first_name}}
-                {{/if}}
-            </div>
-        </div>
-        <div class="form__profile_row">
-            <div>
-                Телефон
-            </div>
-            <div>
-                {{phone}}
-            </div>
-        </div>
+    <div class="form__profile_row">
+      <div>
+        Телефон
+      </div>
+      <div>
+        {{phone}}
+      </div>
     </div>
-    <div class="body_profile-edit f-normal">
-        {{{LinkEditProfile}}}
-        {{{LinkEditPassword}}}
-        {{{ButtonExit}}}
-    </div>
+  </div>
+  <div class="body_profile-edit f-normal">
+    {{{LinkEditProfile}}}
+    {{{LinkEditPassword}}}
+    {{{ButtonExit}}}
+  </div>
 </div>

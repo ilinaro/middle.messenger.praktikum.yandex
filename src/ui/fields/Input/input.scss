@@ -81,9 +81,7 @@
 }
 
 .text-field_floating-3 .text-field__input:focus ~ .text-field__label,
-.text-field_floating-3
-    .text-field__input:not(:placeholder-shown)
-    ~ .text-field__label {
+.text-field_floating-3 .text-field__input:not(:placeholder-shown) ~ .text-field__label {
     transform: scale(0.75) translateY(-1.2rem) translateX(0);
     color: var(--color-darken);
 }

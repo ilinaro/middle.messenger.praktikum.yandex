@@ -1,39 +1,39 @@
 <div>
-    {{{ModalWindowBack}}}
-    <form
-        enctype="multipart/form-data"
-        onsubmit="event.preventDefault()"
-        class="modal_box"
-    >
-        {{#if errorFile}}
-            <div class="f-title f-red">
-                Ошибка, попробуйте ещё раз
-            </div>
-        {{else}}
-            <div class="f-title">
-                {{#if isFile}}
-                    Файл загружен
-                {{else}}
-                    Загрузите файл
-                {{/if}}
-            </div>
-        {{/if}}
+  {{{ModalWindowBack}}}
+  <form
+    enctype="multipart/form-data"
+    onsubmit="event.preventDefault()"
+    class="modal_box"
+  >
+    {{#if errorFile}}
+      <div class="f-title f-red">
+        Ошибка, попробуйте ещё раз
+      </div>
+    {{else}}
+      <div class="f-title">
         {{#if isFile}}
-            <div class="f-normal f-silver">
-                {{{isFile}}}
-            </div>
+          Файл загружен
         {{else}}
-            {{{InputImage}}}
+          Загрузите файл
         {{/if}}
-        {{#if errorNeedFile}}
-            <div class="f-light f-red">
-                Нужно выбрать файл
-            </div>
-        {{/if}}
-        {{#if isFile}}
-            {{{ButtonClose}}}
-        {{else}}
-            {{{ButtonSubmit}}}
-        {{/if}}
-    </form>
+      </div>
+    {{/if}}
+    {{#if isFile}}
+      <div class="f-normal f-silver">
+        {{{isFile}}}
+      </div>
+    {{else}}
+      {{{InputImage}}}
+    {{/if}}
+    {{#if errorNeedFile}}
+      <div class="f-light f-red">
+        Нужно выбрать файл
+      </div>
+    {{/if}}
+    {{#if isFile}}
+      {{{ButtonClose}}}
+    {{else}}
+      {{{ButtonSubmit}}}
+    {{/if}}
+  </form>
 </div>

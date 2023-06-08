@@ -1,19 +1,19 @@
 <div>
-    {{#if isLoading}}
-        ...
+  {{#if isLoading}}
+    ...
+  {{else}}
+    {{#if search}}
+      <div class="messages-day f-light">
+        Выбрать новый контакт
+      </div>
+      <div class="ListContacts__item">
+        {{#each search}}
+          {{{this}}}
+          <div class="line_x"></div>
+        {{/each}}
+      </div>
     {{else}}
-        {{#if search}}
-            <div class="messages-day f-light">
-                Выбрать новый контакт
-            </div>
-            <div class="ListContacts__item">
-                {{#each search}}
-                    {{{this}}}
-                    <div class="line_x"></div>
-                {{/each}}
-            </div>
-        {{else}}
-            {{{ListContacts}}}
-        {{/if}}
+      {{{ListContacts}}}
     {{/if}}
+  {{/if}}
 </div>

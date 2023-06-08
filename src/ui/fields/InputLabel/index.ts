@@ -1,61 +1,58 @@
-import Block from "../../../utils/Block";
-import Input from "../Input";
-import template from "./input-label.hbs";
+import Block from '../../../utils/Block'
+import Input from '../Input'
+import template from './input-label.hbs'
 
 interface InputLabelProps {
-    name: string;
-    type?: string;
-    placeholder: string;
-    id: string;
-    className: string;
-    maxLength: string;
-    label: string;
-    error?: string;
-    onBlur?: (e: FocusEvent) => void;
-    events?: {
-        blur?: (e: FocusEvent) => void;
-    };
+  name: string
+  type?: string
+  placeholder: string
+  id: string
+  className: string
+  maxLength: string
+  label: string
+  error?: string
+  onBlur?: (e: FocusEvent) => void
+  events?: {
+    blur?: (e: FocusEvent) => void
+  }
 }
 
 export default class InputLabel extends Block<InputLabelProps> {
-    constructor(props: InputLabelProps) {
-        super({ type: "input", ...props });
+  constructor(props: InputLabelProps) {
+    super({ type: 'input', ...props })
+  }
+
+  init() {
+    let props = this.props
+
+    if (this.props.onBlur) {
+      props = {
+        ...props,
+        events: {
+          blur: (e: FocusEvent) => this.props.onBlur!(e),
+        },
+      }
     }
 
-    init() {
-        let props = this.props;
+    this.children.Input = new Input(props)
+  }
 
-        if (this.props.onBlur) {
-            props = {
-                ...props,
-                events: {
-                    blur: (e: FocusEvent) => this.props.onBlur!(e),
-                },
-            };
-        }
+  setValue(value: string) {
+    const input = (this.children.Input as Input).element as HTMLInputElement
+    return input.value = value
+  }
 
-        this.children.Input = new Input(props);
-    }
+  getValue(): string {
+    const input = (this.children.Input as Input).element as HTMLInputElement
+    return input.value
+  }
 
-    setValue(value: string) {
-        const input = (this.children.Input as Input)
-            .element as HTMLInputElement;
-        return (input.value = value);
-    }
+  getName(): string {
+    const input = (this.children.Input as Input).element as HTMLInputElement
+    return input.value
+  }
 
-    getValue(): string {
-        const input = (this.children.Input as Input)
-            .element as HTMLInputElement;
-        return input.value;
-    }
-
-    getName(): string {
-        const input = (this.children.Input as Input)
-            .element as HTMLInputElement;
-        return input.value;
-    }
-
-    render() {
-        return this.compile(template, { ...this.props });
-    }
+  render() {
+    return this.compile(template, { ...this.props })
+  }
 }

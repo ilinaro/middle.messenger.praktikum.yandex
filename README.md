@@ -2,33 +2,30 @@
 
 Шаблонизатор __Hadlebars__
 
-Компиляция и рендер на клинете - "@anikin/parcel-transformer-handlebars-precompile
-
 ##### Запуcк в develop
 ```
 npm run dev
 ```
 
-http://localhost:1234
+http://localhost:3000
 
+##### Запуск test
+```
+npm run test
+```
 
 ##### Запуск dist
 ```
 npm start
 ```
 
+Более подробно о работе Docker, можно узнать из Makefile
+
 http://localhost:3000
 
-[Deploy](https://spectacular-monstera-566ed5.netlify.app/)
+[Deploy sprint 3](https://spectacular-monstera-566ed5.netlify.app/)
+
+[Deploy Docker IMAGE](http://89.22.239.85:82/)
 
 
-Компиляция и рендер на клиенте
-.parcelrc
-```
-{
-  "extends": "@parcel/config-default",
-  "transformers": {
-    "*.hbs": ["@anikin/parcel-transformer-handlebars-precompile"]
-  }
-}
-```
+Доп. Выполняются тесты Router, HTTPTransport,  set function, Block, Button

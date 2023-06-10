@@ -9,9 +9,13 @@
     "check": "tsc --noEmit",
     "eslint": "node_modules/.bin/eslint . --fix ",
     "test": "mocha --require ts-node/register --require ./mochaSetup.js './src/**/*.test.ts'",
-    "lint": "eslint .",
     "stlint": "stylelint .",
     "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm-run-all test lint:all"
+    }
   },
   "keywords": [],
   "author": "",

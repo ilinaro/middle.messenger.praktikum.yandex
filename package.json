@@ -12,11 +12,6 @@
     "stlint": "stylelint .",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm-run-all test lint:all"
-    }
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",

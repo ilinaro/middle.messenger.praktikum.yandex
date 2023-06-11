@@ -1,17 +1,18 @@
-@import "./reset";
-@import "./_vars";
-@import "./fonts";
-@import "./pages/error";
-@import "./pages/login";
-@import "./pages/home";
-@import "./pages/profile";
-@import "./pages/modals";
-@import "./pages/registration";
-@import "./pages/message";
-@import "../../common/index";
-@import "../../ui/index";
+@import "./reset.scss";
+@import "./_vars.scss";
+@import "./fonts.scss";
+@import "./pages/error.scss";
+@import "./pages/login.scss";
+@import "./pages/home.scss";
+@import "./pages/profile.scss";
+@import "./pages/modals.scss";
+@import "./pages/registration.scss";
+@import "./pages/message.scss";
+@import "../../common/index.scss";
+@import "../../ui/index.scss";
 
 .border {
+  border: red solid;
   width: 100%;
 }
 

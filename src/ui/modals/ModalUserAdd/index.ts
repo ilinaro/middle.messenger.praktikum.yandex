@@ -64,14 +64,6 @@ export default class ModalUserAdd extends Block<ModalUserAddProps> {
     if(isError) {
       return
     }
-
-    // const chatId = await ChatController.create(getNewUser);
-    
-    // console.log(chatId)
-
-    // ChatsController.addUserToChat(login, chatId);
-    
-    // this.onClose()
   }
 
   onClearInput() {

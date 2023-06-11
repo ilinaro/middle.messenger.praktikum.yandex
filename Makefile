@@ -10,3 +10,4 @@ start:
 
 stop:
 	docker stop app_container
+	

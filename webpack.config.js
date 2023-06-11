@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.hbs/,
-        use: ['handlebars-template-loader'],
+        use: ['handlebars-loader'],
       },
     ],
   },

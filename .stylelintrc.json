@@ -6,7 +6,7 @@
   "rules": {
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
-    "color-hex-case-insensitive": null,
+    "color-hex-case-insensitive": true,
     "scss/dollar-variable-pattern": "^foo",
     "scss/selector-no-redundant-nesting-selector": true,
     "property-no-unknown": null,

@@ -123,7 +123,7 @@ class Block<P extends Record<string, any> = any> {
   getProps() {
     return this.props
   }
-
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   protected componentDidUpdate(_oldProps: P, _newProps: P) {
     return true
   }
@@ -181,10 +181,11 @@ class Block<P extends Record<string, any> = any> {
       }
 
       component.getContent()?.append(...Array.from(stub.childNodes))
-
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       stub.replaceWith(component.getContent()!)
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     Object.entries(this.children).forEach(([_, component]) => {
       if (Array.isArray(component)) {
         component.forEach(replaceStub)
@@ -206,6 +207,7 @@ class Block<P extends Record<string, any> = any> {
 
   _makePropsProxy(props: P) {
     // Ещё один способ передачи this, но он больше не применяется с приходом ES6+
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
     const self = this
 
     return new Proxy(props, {

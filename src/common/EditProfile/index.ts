@@ -138,7 +138,7 @@ export default class EditProfile extends Block<EditProfileProps> {
     const displayName = this.children.InputDisplayName as InputProfile
     const phone = this.children.InputPhone as InputProfile
 
-    let isError: boolean = false
+    let isError = false
 
     const data: ProfileData = {
       email: email.getValue(),

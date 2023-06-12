@@ -151,7 +151,7 @@ export class RegistrationPage extends Block {
     const password = this.children.NewPassword as InputLabel
     const passwordTwo = this.children.NewPasswordTwo as InputLabel
 
-    let isError: boolean = false
+    let isError = false
 
     const data: SignupData = {
       email: email.getValue(),

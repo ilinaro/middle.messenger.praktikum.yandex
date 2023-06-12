@@ -52,7 +52,7 @@ export default class ModalFileFirst extends Block<ModalFileFirstProps> {
           const imageFile = (this.children.InputImage as InputImage).getValue()
           if (imageFile) {
             try {
-              let resource = <
+              const resource = <
                 {
                   lastModifiedDate?: Date
                   name?: string
@@ -61,6 +61,7 @@ export default class ModalFileFirst extends Block<ModalFileFirstProps> {
                   webkitRelativePath?: string
                 }
               >imageFile.get('avatar')
+
               if (resource) {
                 this.props.isFile = resource.name
                 ProfileController.newAvatar(imageFile)

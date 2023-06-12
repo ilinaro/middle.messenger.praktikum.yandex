@@ -3,24 +3,18 @@
 
 echo '🏗️👷 TS testing and building your project before committing'
 
-# Check Prettier standards
-npm run check:ts ||
+npm run eslint ||
 (
-    echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
-            Prettier Check Failed. Run npm run format, add changes and try commit again.';
+    echo '🤢🤮🤢🤮 eslint. 🤢🤮🤢🤮';
     false;
 )
 
-# If everything passes... Now we can commit
-npm run build ||
+npm run stylelint ||
 (
-    echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
-            Next build failed: View the errors above to see why. 
-    '
+    echo '🤢🤮🤢🤮 stylelint 🤢🤮🤢🤮'
     false;
 )
 
-# If everything passes... Now we can commit
 echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build now. 🤔🤔🤔🤔'
 
 npm run test ||

@@ -67,7 +67,7 @@ export default class EditPassword extends Block<EditPasswordProps> {
       newPassword: newPassword.getValue(),
     }
 
-    let isError: boolean = false
+    let isError = false
 
     if (!newPasswordTwo || !data.newPassword || !data.oldPassword) {
       return

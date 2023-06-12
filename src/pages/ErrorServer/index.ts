@@ -1,10 +1,10 @@
-import Block from '../../utils/Block'
-import { Button } from '../../ui'
-import template from './500.hbs'
+import Block from '../../utils/Block';
+import { Button } from '../../ui';
+import template from './500.hbs';
 
 export class ErrorServerPage extends Block {
   constructor() {
-    super({})
+    super({});
   }
 
   init() {
@@ -12,12 +12,12 @@ export class ErrorServerPage extends Block {
       label: 'Назад к чатам',
       className: 'button button_blue f-normal btn-white',
       events: {
-        click: () =>  console.log('login'),
+        click: () => console.log('login'),
       },
-    })
+    });
   }
 
   render() {
-    return this.compile(template, this.props)
+    return this.compile(template, this.props);
   }
 }

@@ -16,7 +16,7 @@ function render(query: string, block: Block) {
   }
 
   root.innerHTML = '';
-
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   root.append(block.getContent()!);
 
   return root;

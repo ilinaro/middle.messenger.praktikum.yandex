@@ -18,13 +18,11 @@ export default class InputSearch extends Block<InputProps> {
   }
 
   init() {
-    let props = this.props
-
     if (this.props.onBlur) {
-      props = {
-        ...props,
+      this.props = {
+        ...this.props,
         events: {
-          blur: (e: FocusEvent) => this.props.onBlur!(e),
+          blur: (e: FocusEvent) => this.props.onBlur?.(e),
         },
       }
     }

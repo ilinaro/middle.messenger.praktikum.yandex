@@ -35,11 +35,12 @@ export default class InputImage extends Block<InputImageProps> {
   }
   
   getValue() {
-    const input = this.element!.querySelector(
-      'input',
-    ) as HTMLInputElement
 
-    if (input.files && input.files[0]) {
+    const input = this.element?.querySelector(
+      'input',
+    ) as HTMLInputElement | null
+
+    if (input && input.files && input.files[0]) {
       const formData: FormData = new FormData();
       formData.append('avatar', input.files[0]);
       return formData
@@ -47,13 +48,11 @@ export default class InputImage extends Block<InputImageProps> {
   }
 
   init() {
-    let props = this.props
-
     if (this.props.onBlur) {
-      props = {
-        ...props,
+      this.props = {
+        ...this.props,
         events: {
-          blur: (e: FocusEvent) => this.props.onBlur!(e),
+          blur: (e: FocusEvent) => this.props.onBlur?.(e),
         },
       }
     }

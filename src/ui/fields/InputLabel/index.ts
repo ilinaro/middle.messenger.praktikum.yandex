@@ -29,7 +29,7 @@ export default class InputLabel extends Block<InputLabelProps> {
       props = {
         ...props,
         events: {
-          blur: (e: FocusEvent) => this.props.onBlur!(e),
+          blur: (e: FocusEvent) => this.props.onBlur?.(e),
         },
       }
     }

@@ -5,7 +5,7 @@ export default abstract class AbsctractValidator implements ValidatorInterface {
   abstract readonly Message: MessageType
 
   protected fieldName?: string = ''
-  public value: string = ''
+  public value = ''
 
   constructor(value: string, fieldName?: string) {
     this.value = value

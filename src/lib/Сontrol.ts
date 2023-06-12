@@ -58,13 +58,11 @@ export default abstract class ValidatorService {
   }
 
   protected static isDisableRender(value: string, component: Block): boolean {
-    let componentId: string = component.id
-
-    if (this.oldValues[componentId] === value) {
+    if (this.oldValues[component.id] === value) {
       return true
     }
 
-    this.oldValues[componentId] = value
+    this.oldValues[component.id] = value
 
     return false
   }

@@ -8,7 +8,7 @@ import MessagesController from '../../controllers/MessagesController'
 import template from './chat.hbs'
 import { withStore } from '../../utils/Store'
 
-type UserMessages = {
+export type UserMessages = {
   chat_id?: number
   content?: string
   id?: number
@@ -84,7 +84,6 @@ class Chat extends Block<CharProps> {
   }
 
   readMessage(props: any) {
-    // console.log(props)
     return (
       !!props.messages.length &&
       props.messages.map((data: UserMessages) => {

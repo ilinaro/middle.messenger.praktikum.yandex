@@ -1,5 +1,4 @@
 /.cache
-/.parcel-cache
 /.idea
 /.vscode
 /dist
@@ -7,6 +6,5 @@
 
 .DS_Store
 
-package-lock.json
 node_modules
-
+yarn.lock

@@ -1,12 +1,18 @@
-import Block from '../../utils/Block'
-import template from './read-message.hbs'
+import Block from '../../utils/Block';
+import template from './read-message.hbs';
+
+type Props = {
+  content?: string
+  time?: string;
+  from?: boolean
+};
 
 export default class ReadMessage extends Block {
-  constructor(props: {}) {
-    super(props)
+  constructor(props: Props) {
+    super(props);
   }
 
   render() {
-    return this.compile(template, this.props)
+    return this.compile(template, this.props);
   }
 }

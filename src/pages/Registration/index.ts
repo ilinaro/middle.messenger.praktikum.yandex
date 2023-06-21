@@ -1,5 +1,4 @@
 import { Button, InputLabel } from '../../ui'
-import { SigninData, SignupData } from '../../api/AuthAPI'
 import {
   СontrolEmail,
   СontrolLogin,
@@ -12,6 +11,7 @@ import {
 import AuthController from '../../controllers/AuthController'
 import Block from '../../utils/Block'
 import { Link } from '../../common/Link'
+import { SignupData } from '../../api/AuthAPI'
 import template from './registration.hbs'
 
 export class RegistrationPage extends Block {
@@ -151,7 +151,7 @@ export class RegistrationPage extends Block {
     const password = this.children.NewPassword as InputLabel
     const passwordTwo = this.children.NewPasswordTwo as InputLabel
 
-    let isError: boolean = false
+    let isError = false
 
     const data: SignupData = {
       email: email.getValue(),

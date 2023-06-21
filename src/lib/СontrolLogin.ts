@@ -4,10 +4,10 @@ import ValidatorInterface from './OnСontrol/Interface/ValidatorInterface'
 import Сontrol from './Сontrol'
 
 export default class СontrolLogin extends Сontrol {
-  private static validatorName: string = 'OnСontrolLogin'
+  private static validatorName = 'OnСontrolLogin'
 
-  private static minLength: number = 3
-  private static maxLength: number = 20
+  private static minLength = 3
+  private static maxLength = 20
 
   static check(login: string, component: Block): boolean {
     const loginValidator: ValidatorInterface = new OnСontrolLogin(login)

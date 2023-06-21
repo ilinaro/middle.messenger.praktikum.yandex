@@ -19,8 +19,8 @@ class ListSearch extends Block<ListSearchProps> {
     this.children.ListContacts = new ListContacts({})
   }
   
-  componentDidUpdate(oldProps: any, newProps: any): boolean {
-    if (!!newProps.search) {
+  componentDidUpdate(_oldProps: any, newProps: any): boolean {
+    if (newProps.search) {
       this.children.search = this.searchChats(newProps)
       return true
     }

@@ -1,13 +1,16 @@
 {
-  "extends": "stylelint-config-recommended",
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-recommended-scss"
+  ],
   "rules": {
-    "color-hex-case": "lower",
     "at-rule-no-unknown": null,
     "property-no-unknown": null,
     "no-empty-source": null,
     "block-no-empty": null,
     "no-descending-specificity": null
   },
+  "syntax": "scss",
   "ignoreFiles": [
     "**/*.js",
     "**/*.ts",
@@ -15,7 +18,17 @@
     "**/*.json",
     "**/*.md",
     "src/index.html",
-    "build/*",
-    "dist/*"
+    "build/**/*",
+    "dist/**/*",
+    "Dockerfile",
+    "**/*.jpg",
+    "**/*.svg",
+    "**/*.toml",
+    "**/*.woff2",
+    "**/*.woff",
+    "**/*.ttf",
+    "**/*.eot",
+    "**/*.ico",
+    "Makefile"
   ]
 }

@@ -1,29 +1,28 @@
-import { Button, InputLabel, ModalWindowBack } from '../..'
+import { Button, InputLabel, ModalWindowBack } from '../..';
 
-import Block from '../../../utils/Block'
-import ChatController from '../../../controllers/ChatController'
-import template from './modal-user-add.hbs'
-import { СontrolLogin } from '../../../lib'
+import Block from '../../../utils/Block';
+import template from './modal-user-add.hbs';
+import { СontrolLogin } from '../../../lib';
 
 interface ModalUserAddProps {
-  type?: string
-  state: boolean
-  callbackAdd?: () => void
+  type?: string;
+  state: boolean;
+  callbackAdd?: () => void;
 }
 
 export default class ModalUserAdd extends Block<ModalUserAddProps> {
   constructor(props: ModalUserAddProps) {
-    super({ type: 'div', ...props })
+    super({ type: 'div', ...props });
   }
 
   init() {
     this.children.ModalWindowBack = new ModalWindowBack({
       events: {
         click: () => {
-          this.onCancel()
+          this.onCancel();
         },
       },
-    })
+    });
     this.children.Login = new InputLabel({
       id: 'login',
       name: 'login',
@@ -31,14 +30,14 @@ export default class ModalUserAdd extends Block<ModalUserAddProps> {
       maxLength: '40',
       placeholder: 'Логин',
       label: 'Логин',
-      className: "text-field__input",
+      className: 'text-field__input',
       onBlur: (e: FocusEvent) => {
         СontrolLogin.check(
           (e.target as HTMLInputElement).value,
-          this.children.Login as InputLabel,
-        )
+          this.children.Login as InputLabel
+        );
       },
-    })
+    });
 
     this.children.Button = new Button({
       label: 'Добавить',
@@ -46,55 +45,46 @@ export default class ModalUserAdd extends Block<ModalUserAddProps> {
       type: 'submit',
       events: {
         click: () => {
-          this.onSubmit()
+          this.onSubmit();
         },
       },
-    })
+    });
   }
 
   async onSubmit() {
-    const newUser = this.children.Login as InputLabel
-    const getNewUser = newUser.getValue()
-    
-    let isError: boolean = false
+    const newUser = this.children.Login as InputLabel;
+    const getNewUser = newUser.getValue();
+
+    let isError = false;
 
     if (СontrolLogin.check(getNewUser, newUser)) {
-      isError = true
-    }
-    
-    if(isError) {
-      return
+      isError = true;
     }
 
-    // const chatId = await ChatController.create(getNewUser);
-    
-    // console.log(chatId)
-
-    // ChatsController.addUserToChat(login, chatId);
-    
-    // this.onClose()
+    if (isError) {
+      return;
+    }
   }
 
   onClearInput() {
-    let valueClear = (this.children.Login as InputLabel)
-    return valueClear.setValue('')
+    return (this.children.Login as InputLabel).setValue('');
   }
 
   onCancel() {
     if (this.props.callbackAdd) {
-      this.onClearInput()
-      this.props.callbackAdd()
+      this.onClearInput();
+      this.props.callbackAdd();
     }
   }
 
   onClose() {
     if (this.props.callbackAdd) {
-      this.onClearInput()
-      this.props.callbackAdd()
+      this.onClearInput();
+      this.props.callbackAdd();
     }
   }
 
   render() {
-    return this.compile(template, { ...this.props })
+    return this.compile(template, { ...this.props });
   }
 }

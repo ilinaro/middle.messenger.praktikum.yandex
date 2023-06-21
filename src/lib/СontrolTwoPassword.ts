@@ -4,7 +4,7 @@ import ValidatorInterface from './OnСontrol/Interface/ValidatorInterface'
 import Сontrol from './Сontrol'
 
 export default class СontrolTwoPassword extends Сontrol {
-  private static validatorName: string = 'OnСontrolTwoPassword'
+  private static validatorName = 'OnСontrolTwoPassword'
 
   static check(
     password: string,

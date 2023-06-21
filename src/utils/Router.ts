@@ -1,6 +1,6 @@
 import Block from './Block';
 
-interface BlockConstructable<P extends Record<string, any> = any> {
+export interface BlockConstructable<P extends Record<string, any> = any> {
   new (props: P): Block<P>
 }
 
@@ -16,7 +16,7 @@ function render(query: string, block: Block) {
   }
 
   root.innerHTML = '';
-
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   root.append(block.getContent()!);
 
   return root;
@@ -117,4 +117,4 @@ export class Router {
   }
 }
 
-export default new Router('#app');
+export default new Router('#root');

@@ -3,14 +3,14 @@ import { Button, InputLabel } from '../../ui'
 import AuthController from '../../controllers/AuthController'
 import Block from '../../utils/Block'
 import { Link } from '../../common/Link'
-import template from './login.hbs'
+import template from './LoginPage.hbs'
 
 export class LoginPage extends Block {
   constructor() {
     super({})
   }
 
-  _componentDidMount(): void {
+  componentDidMount(): void {
     console.log('This page Login')
   }
 

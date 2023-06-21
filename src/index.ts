@@ -1,4 +1,3 @@
-import '../src/layouts'
 import '../src/common'
 import './ui'
 import './assets/styles/global.scss'
@@ -7,7 +6,7 @@ import AuthController from './controllers/AuthController';
 import { EditPasswordPage } from './pages/EditPassword'
 import { EditProfilePage } from './pages/EditProfile'
 import { ErrorServerPage } from './pages/ErrorServer'
-import { LoginPage } from './pages/Login'
+import { LoginPage } from './pages/LoginPage'
 import { MessagePage } from './pages/Message'
 import { NotFoundPage } from './pages/NotFound'
 import { ProfilePage } from './pages/Profile'

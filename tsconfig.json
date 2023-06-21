@@ -14,5 +14,6 @@
     "strictNullChecks": true,
     "noUnusedLocals": true,
     "sourceMap": true
-  }
+  },
+  "ts-node": { "files": true }
 }

@@ -2,7 +2,6 @@ import ArrowSVG from './../../assets/icons/ArrowSVG.svg'
 import Block from '../../utils/Block'
 import { BodyProfile } from '../../common'
 import { Link } from '../../common/Link'
-import ProfileController from '../../controllers/ProfileController'
 import template from './profile.hbs'
 import { withStore } from '../../utils/Store'
 

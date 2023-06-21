@@ -1,5 +1,5 @@
-{{#extend "ProfileLayout"}}
-  {{#content body}}
+<html lang="ru">
+  <main class="profileLayout">
     <div class="page_profile">
       {{{LinkBack}}}
       {{#if isLoading}}
@@ -7,8 +7,8 @@
           Loading...
         </div>
       {{else}}
-          {{{BodyProfile}}}
+        {{{BodyProfile}}}
       {{/if}}
     </div>
-  {{/content}}
-{{/extend}}
+  </main>
+</html>

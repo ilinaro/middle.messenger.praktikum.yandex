@@ -1,8 +1,16 @@
 {
-  "extends": "airbnb",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
-    "no-unused-vars": 2,
-    "max-len": [1, 100],
-    "max-params": [2, 3]
+    "max-len": ["warn", 100],
+    "max-params": ["error", 3],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-empty-function": "off"
   }
 }

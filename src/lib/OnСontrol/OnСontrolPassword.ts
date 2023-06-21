@@ -1,7 +1,7 @@
 import AbsctractValidator from './Interface/AbstractValidator'
 
 export default class OnСontrolPassword extends AbsctractValidator {
-  REGEX: RegExp = /(?=.*[0-9])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,40}/g
+  REGEX = /(?=.*[0-9])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,40}/g
 
   Message = {
     NotBlank: `Поле должно быть заполнено`,

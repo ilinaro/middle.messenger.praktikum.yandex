@@ -1,12 +1,9 @@
-import { AttachMessage, HeadBar, ReadMessage } from '..'
-import { EnterMessage, InputMessage } from '../../ui'
-
 import Block from '../../utils/Block'
+import Chat from '../Chat'
 import { ChatsData } from '../../api/ChatAPI'
 import { GuestData } from '../../api/ProfileAPI'
 import template from './room.hbs'
 import { withStore } from '../../utils/Store'
-import Chat from '../Chat'
 
 interface CharProps {
   type?: string

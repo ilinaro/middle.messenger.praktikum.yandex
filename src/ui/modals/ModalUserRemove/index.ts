@@ -44,8 +44,7 @@ export default class ModalUserRemove extends Block<ModalUserRemoveProps> {
   }
 
   onClearInput() {
-    let valueClear = (this.children.Login as InputLabel).setValue('')
-    return valueClear
+    return (this.children.Login as InputLabel).setValue('')
   }
 
   onCancel() {

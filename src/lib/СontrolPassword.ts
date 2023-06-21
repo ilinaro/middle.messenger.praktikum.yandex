@@ -4,9 +4,9 @@ import ValidatorInterface from './OnСontrol/Interface/ValidatorInterface'
 import Сontrol from './Сontrol'
 
 export default class СontrolPassword extends Сontrol {
-  private static validatorName: string = 'OnСontrolPassword'
-  private static minLength: number = 8
-  private static maxLength: number = 40
+  private static validatorName = 'OnСontrolPassword'
+  private static minLength = 8
+  private static maxLength = 40
 
   static check(password: string, component: Block): boolean {
     const passwordValidator: ValidatorInterface = new OnСontrolPassword(
